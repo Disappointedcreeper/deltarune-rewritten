@@ -12,7 +12,7 @@ function Dummy:init()
     self.max_health = 450
     self.health = 450
     -- Enemy attack (determines bullet damage)
-    self.attack = 4
+    self.attack = 10
     -- Enemy defense (usually 0)
     self.defense = 0
     -- Enemy reward
@@ -49,7 +49,7 @@ function Dummy:init()
     self:registerAct("Smile")
     -- Register party act with Ralsei called "Tell Story"
     -- (second argument is description, usually empty)
-    self:registerAct("Tell Story", "", {"ralsei"})
+    self:registerAct("Tell Story", "", {"vessel"})
 end
 
 function Dummy:onAct(battler, name)
@@ -75,12 +75,12 @@ function Dummy:onAct(battler, name)
     elseif name == "Standard" then --X-Action
         -- Give the enemy 50% mercy
         self:addMercy(50)
-        if battler.chara.id == "ralsei" then
+        if battler.chara.id == "vessel" then
             -- R-Action text
             return "* Ralsei bowed politely.\n* The dummy spiritually bowed\nin return."
-        elseif battler.chara.id == "susie" then
+        elseif battler.chara.id == "dess" then
             -- S-Action: start a cutscene (see scripts/battle/cutscenes/dummy.lua)
-            Game.battle:startActCutscene("dummy", "susie_punch")
+            Game.battle:startActCutscene("dummy", "dess_punch")
             return
         else
             -- Text for any other character (like Noelle)

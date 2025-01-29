@@ -16,9 +16,9 @@ return {
         -- Susie text
         cutscene:text("* You,[wait:5] uh,[wait:5] look like a weenie.[wait:5]\n* I don't like beating up\npeople like that.", "nervous_side", "dess")
 
-        if cutscene:getCharacter("ralsei") then
+        if cutscene:getCharacter("vessel") then
             -- Ralsei text, if he's in the party
-            cutscene:text("* Aww,[wait:5] Susie!", "blush_pleased", "ralsei")
+            cutscene:text("* Aww,[wait:5] Susie!", "blush_pleased", "vessel")
         end
     end
 }

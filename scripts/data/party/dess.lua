@@ -31,7 +31,7 @@ function character:init()
     self.xact_name = "D-Action"
 
     -- Spells
-    self:addSpell("rude_buster")
+    self:addSpell("snowball")
     if Game.chapter >= 2 then
         self:addSpell("ultimate_heal")
     end

@@ -9,7 +9,7 @@ function Mod:init()
         end
         if (self.timer >= 50) and (self.current_stage == 1) then
             Assets.playSound("break1")
-            self.soul:setSprite("player/heart_break")
+            self.soul:setSprite("player/modes/red_heart_break")
             self.current_stage = 2
         end
         if (self.timer >= 90) and (self.current_stage == 2) then
@@ -27,9 +27,9 @@ function Mod:init()
                 if i <= shard_count/2 then
                     shard = Sprite("player/heart_shard", self.soul.x + x_pos, self.soul.y + y_pos)
                 else
-                    shard = Sprite("player/heart_shard_small", self.soul.x + x_pos, self.soul.y + y_pos)
+                    shard = Sprite("player/modes/red_heart_shard", self.soul.x + x_pos, self.soul.y + y_pos)
                 end
-                shard:setColor(self.soul:getColor())
+                shard:setColor(COLORS.white)
                 shard.physics.direction = math.rad(Utils.random(360))
                 shard.physics.speed = 7
                 shard.physics.gravity = 0.2

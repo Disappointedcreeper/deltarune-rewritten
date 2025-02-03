@@ -63,6 +63,7 @@ function Mod:init()
             if not Game:getConfig("oldGameOver") or Game:isLight() then
                 if Game:isLight() then
                     self.text = Sprite("ui/gameover_ut", 111, 32)
+            self.current_stage = 3
                 else
                     self.text = Sprite("ui/gameover", 0, 40)
                     self.text:setScale(2)

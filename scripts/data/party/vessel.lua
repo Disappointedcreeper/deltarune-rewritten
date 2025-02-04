@@ -35,8 +35,7 @@ function character:init()
     self.xact_name = "V-Action"
 
     -- Spells
-    self:addSpell("pacify")
-    self:addSpell("heal_prayer")
+    self:addSpell("perspective")
 
     -- Current health (saved to the save file)
     if Game.chapter == 1 then

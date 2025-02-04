@@ -2,7 +2,10 @@
 local GameOver, super = Class(GameOver)
 
 function GameOver:init(x, y)
-    super.init(self, 0, 0)
+    if Game:getFlag("soulMode") == nil then
+        Game:setFlag("soulMode", "red")
+    end
+    super.super.init(self,0,0)
 
     self.font = Assets.getFont("main")
     self.soul_blur = Assets.getTexture("player/heart_blur")
@@ -13,7 +16,7 @@ function GameOver:init(x, y)
 
     self.music = Music()
 
-    self.soul = Sprite("player/modes/red_heart")
+    self.soul = Sprite("player/modes/"..Game:getFlag("soulMode").."_heart")
     self.soul:setOrigin(0.5, 0.5)
     self.soul:setColor(Game:getSoulColor())
     self.soul.x = x
@@ -44,7 +47,7 @@ function GameOver:update()
     end
     if (self.timer >= 50) and (self.current_stage == 1) then
         Assets.playSound("break1")
-        self.soul:setSprite("player/modes/red_heart_break")
+        self.soul:setSprite("player/modes/"..Game:getFlag("soulMode").."_heart_break")
         self.current_stage = 2
     end
     if (self.timer >= 90) and (self.current_stage == 2) then
@@ -62,7 +65,7 @@ function GameOver:update()
             if i <= shard_count/2 then
                 shard = Sprite("player/heart_shard", self.soul.x + x_pos, self.soul.y + y_pos)
             else
-                shard = Sprite("player/modes/red_heart_shard", self.soul.x + x_pos, self.soul.y + y_pos)
+                shard = Sprite("player/modes/"..Game:getFlag("soulMode").."_heart_shard", self.soul.x + x_pos, self.soul.y + y_pos)
             end
 
             shard:setColor(self.soul:getColor())

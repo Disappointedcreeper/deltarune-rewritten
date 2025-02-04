@@ -30,7 +30,8 @@ function character:init()
     self.has_spells = true
 
     -- Spells
-    self:addSpell("rude_buster")
+    self:addSpell("cheer_up")
+    self:addSpell("pacify")
 
     -- Whether the party member can use their X-Action
     self.has_xact = true

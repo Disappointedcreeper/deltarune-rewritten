@@ -9,9 +9,9 @@ function spell:init()
     self.cast_name = nil
 
     -- Battle description
-    self.effect = "Cold\nDamage"
+    self.effect = "Snow\nDamage"
     -- Menu description
-    self.description = "Deals moderate Cold-elemental damage to\none foe. Depends on Attack & Magic."
+    self.description = "Deals moderate Snow-elemental damage to\none foe. Depends on Attack & Magic."
 
     -- TP cost
     self.cost = 50
@@ -21,6 +21,11 @@ function spell:init()
 
     -- Tags that apply to this spell
     self.tags = {"cold", "damage"}
+
+    self.mashSprite = Sprite("ui/battle/quicktime/mash_z")
+    self.mashSprite.x = 320;
+    self.mashSprite.y = 40;
+    self.mashSprite:setOrigin(0.5, 0.5)
 end
 
 function spell:getCastMessage(user, target)
@@ -29,15 +34,14 @@ end
 
 function spell:getTPCost(chara)
     local cost = super.getTPCost(self, chara)
-    if chara and chara:checkWeapon("devilsknife") then
-        cost = cost - 10
-    end
     return cost
 end
 
 function spell:onCast(user, target)
     local buster_finished = false
     local anim_finished = false
+    Game.battle:addChild(self.mashSprite)
+
     local function finishAnim()
         anim_finished = true
         if buster_finished then
@@ -57,6 +61,7 @@ function spell:onCast(user, target)
             if pressed then
                 Assets.playSound("scytheburst")
             end
+            self.mashSprite:remove()
             target:flash()
             target:hurt(damage, user)
             buster_finished = true

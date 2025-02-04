@@ -1,0 +1,3 @@
+All sprites except for cyan and red are placeholders for now
+Yellow (and possibly orange) are even more of placeholders, just existing to fill everything out, they'll get their proper orientations once we get to them
+And the split heart sprites are for gits and shiggles

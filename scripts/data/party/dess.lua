@@ -32,9 +32,7 @@ function character:init()
 
     -- Spells
     self:addSpell("snowball")
-    if Game.chapter >= 2 then
-        self:addSpell("ultimate_heal")
-    end
+    self:addSpell("avalanche")
 
     -- Current health (saved to the save file)
     if Game.chapter == 1 then

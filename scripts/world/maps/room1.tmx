@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="38">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="24" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="39">
  <editorsettings>
   <export target="room1.lua" format="lua"/>
  </editorsettings>
@@ -114,12 +114,6 @@ you.</property>
     <property name="marker" value="entry"/>
    </properties>
   </object>
-  <object id="33" name="interactable" x="280" y="80" width="40" height="40">
-   <properties>
-    <property name="cutscene" value="room1.wall"/>
-    <property name="once" type="bool" value="true"/>
-   </properties>
-  </object>
   <object id="35" name="npc" x="300" y="160">
    <properties>
     <property name="actor" value="wall"/>
@@ -129,6 +123,12 @@ you.</property>
 no-good wall slammers.</property>
    </properties>
    <point/>
+  </object>
+  <object id="38" name="interactable" x="270" y="73" width="40" height="40">
+   <properties>
+    <property name="cutscene" value="room1.wall"/>
+    <property name="once" type="bool" value="true"/>
+   </properties>
   </object>
  </objectgroup>
  <objectgroup color="#7f00ff" id="5" name="markers">

@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 6,
-  nextobjectid = 38,
+  nextobjectid = 39,
   properties = {
     ["keep_music"] = true,
     ["music"] = "hometownnight",
@@ -479,22 +479,6 @@ return {
           }
         },
         {
-          id = 33,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 280,
-          y = 80,
-          width = 40,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "room1.wall",
-            ["once"] = true
-          }
-        },
-        {
           id = 35,
           name = "npc",
           type = "",
@@ -509,6 +493,22 @@ return {
             ["actor"] = "wall",
             ["flagcheck"] = "wall_hit",
             ["text1"] = "* I Am the Wall Guardian.[wait:5]\n* This Wall is Off Limits for you\nno-good wall slammers."
+          }
+        },
+        {
+          id = 38,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 270,
+          y = 73,
+          width = 40,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "room1.wall",
+            ["once"] = true
           }
         }
       }

@@ -9,8 +9,8 @@ return {
   height = 21,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 21,
-  nextobjectid = 48,
+  nextlayerid = 25,
+  nextobjectid = 56,
   properties = {
     ["keep_music"] = false,
     ["music"] = "hometown",
@@ -401,51 +401,10 @@ return {
       }
     },
     {
-      type = "tilelayer",
-      x = 0,
-      y = 0,
-      width = 16,
-      height = 21,
-      id = 2,
-      name = "Tile Layer 2",
-      class = "",
-      visible = true,
-      opacity = 1,
-      offsetx = 0,
-      offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
-      properties = {},
-      encoding = "lua",
-      data = {
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        175, 165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        138, 175, 176, 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        138, 137, 138, 175, 176, 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 126, 129, 128, 129, 173,
-        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138,
-        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 136, 138, 137, 138, 137,
-        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138,
-        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 136, 138, 137, 138, 137,
-        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138
-      }
-    },
-    {
       type = "objectgroup",
       draworder = "topdown",
       id = 12,
-      name = "images",
+      name = "objects_deco",
       class = "",
       visible = true,
       opacity = 1,
@@ -456,7 +415,7 @@ return {
       properties = {},
       objects = {
         {
-          id = 47,
+          id = 50,
           name = "",
           type = "",
           shape = "rectangle",
@@ -678,7 +637,7 @@ return {
           shape = "rectangle",
           x = 218,
           y = 360,
-          width = 247,
+          width = 94,
           height = 30,
           rotation = 0,
           visible = true,
@@ -766,6 +725,100 @@ return {
           gid = 2,
           visible = true,
           properties = {}
+        },
+        {
+          id = 52,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 368,
+          y = 360,
+          width = 97,
+          height = 30,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 11,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 27,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 240,
+          y = 840,
+          width = 200,
+          height = 58,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "room2",
+            ["marker"] = "entry2"
+          }
+        },
+        {
+          id = 54,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 312,
+          y = 360,
+          width = 56,
+          height = 28,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["exit_delay"] = 0.2,
+            ["exit_sound"] = "door_close",
+            ["map"] = "hometown/interior/home_main",
+            ["marker"] = "entry",
+            ["sound"] = "doortransition"
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 24,
+      name = "objects_over",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 51,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 82,
+          y = 422,
+          width = 390,
+          height = 380,
+          rotation = 0,
+          gid = 262,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -812,10 +865,13 @@ return {
       }
     },
     {
-      type = "objectgroup",
-      draworder = "topdown",
-      id = 11,
-      name = "objects",
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 16,
+      height = 21,
+      id = 2,
+      name = "Tile Layer 2",
       class = "",
       visible = true,
       opacity = 1,
@@ -824,23 +880,29 @@ return {
       parallaxx = 1,
       parallaxy = 1,
       properties = {},
-      objects = {
-        {
-          id = 27,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 240,
-          y = 840,
-          width = 200,
-          height = 58,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["map"] = "room2",
-            ["marker"] = "entry2"
-          }
-        }
+      encoding = "lua",
+      data = {
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 136,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        175, 165, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        138, 175, 176, 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        138, 137, 138, 175, 176, 177, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 126, 129, 128, 129, 173,
+        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138,
+        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 136, 138, 137, 138, 137,
+        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138,
+        137, 138, 137, 138, 139, 140, 0, 0, 0, 0, 0, 136, 138, 137, 138, 137,
+        138, 137, 138, 137, 139, 140, 0, 0, 0, 0, 0, 136, 137, 138, 137, 138
       }
     }
   }

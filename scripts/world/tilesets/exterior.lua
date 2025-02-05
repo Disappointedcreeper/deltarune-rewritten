@@ -23,11 +23,17 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 1,
+  tilecount = 2,
   tiles = {
     {
       id = 0,
       image = "../../../assets/sprites/exterior/hometown/building_krishouse_0.png",
+      width = 195,
+      height = 190
+    },
+    {
+      id = 1,
+      image = "../../../assets/sprites/exterior/hometown/building_krishouse_over.png",
       width = 195,
       height = 190
     }

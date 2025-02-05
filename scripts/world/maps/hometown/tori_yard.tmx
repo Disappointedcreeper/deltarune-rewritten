@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="21" nextobjectid="48">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="25" nextobjectid="56">
  <editorsettings>
   <export target="tori_yard.lua" format="lua"/>
  </editorsettings>
@@ -235,6 +235,66 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="12" name="objects_deco">
+  <object id="50" gid="261" x="82" y="422" width="390" height="380"/>
+ </objectgroup>
+ <objectgroup color="#0026ff" id="6" name="collision" tintcolor="#0000ff">
+  <object id="6" x="200" y="600" width="40" height="240"/>
+  <object id="8" x="120" y="600" width="80" height="40"/>
+  <object id="9" x="40" y="560" width="80" height="40"/>
+  <object id="11" x="0" y="200" width="40" height="360"/>
+  <object id="12" x="40" y="200" width="560" height="40"/>
+  <object id="13" x="600" y="200" width="40" height="440"/>
+  <object id="14" x="440" y="640" width="200" height="40"/>
+  <object id="15" x="440" y="680" width="40" height="160"/>
+  <object id="16" x="160" y="600">
+   <polygon points="0,0 -40,-40 -40,0"/>
+  </object>
+  <object id="17" x="40" y="560">
+   <polygon points="0,0 40,0 0,-40"/>
+  </object>
+  <object id="18" x="560" y="640">
+   <polygon points="0,0 40,0 40,-40 0,0"/>
+  </object>
+  <object id="21" x="92" y="240" width="32" height="136"/>
+  <object id="22" x="124" y="346" width="94" height="30"/>
+  <object id="23" x="218" y="360" width="94" height="30"/>
+  <object id="25" x="430" y="240" width="35" height="120"/>
+  <object id="29" gid="2" x="165" y="293" width="20" height="20"/>
+  <object id="30" gid="2" x="218" y="301" width="20" height="20"/>
+  <object id="31" gid="2" x="218" y="304" width="20" height="20"/>
+  <object id="32" gid="2" x="218" y="303" width="20" height="20"/>
+  <object id="33" gid="2" x="280" y="278" width="20" height="20"/>
+  <object id="52" x="368" y="360" width="97" height="30"/>
+ </objectgroup>
+ <objectgroup color="#ff00ff" id="11" name="objects">
+  <object id="27" name="transition" x="240" y="840" width="200" height="58">
+   <properties>
+    <property name="map" value="room2"/>
+    <property name="marker" value="entry2"/>
+   </properties>
+  </object>
+  <object id="54" name="transition" x="312" y="360" width="56" height="28">
+   <properties>
+    <property name="exit_delay" type="float" value="0.2"/>
+    <property name="exit_sound" value="door_close"/>
+    <property name="map" value="hometown/interior/home_main"/>
+    <property name="marker" value="entry"/>
+    <property name="sound" value="doortransition"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="24" name="objects_over">
+  <object id="51" gid="262" x="82" y="422" width="390" height="380"/>
+ </objectgroup>
+ <objectgroup color="#b200ff" id="5" name="markers">
+  <object id="1" name="entry" x="340" y="740">
+   <point/>
+  </object>
+  <object id="2" name="spawn" x="340" y="420">
+   <point/>
+  </object>
+ </objectgroup>
  <layer id="2" name="Tile Layer 2" width="16" height="21">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -260,51 +320,4 @@
 138,137,138,137,139,140,0,0,0,0,0,136,137,138,137,138
 </data>
  </layer>
- <objectgroup id="12" name="images">
-  <object id="47" gid="261" x="82" y="422" width="390" height="380"/>
- </objectgroup>
- <objectgroup color="#0026ff" id="6" name="collision" tintcolor="#0000ff">
-  <object id="6" x="200" y="600" width="40" height="240"/>
-  <object id="8" x="120" y="600" width="80" height="40"/>
-  <object id="9" x="40" y="560" width="80" height="40"/>
-  <object id="11" x="0" y="200" width="40" height="360"/>
-  <object id="12" x="40" y="200" width="560" height="40"/>
-  <object id="13" x="600" y="200" width="40" height="440"/>
-  <object id="14" x="440" y="640" width="200" height="40"/>
-  <object id="15" x="440" y="680" width="40" height="160"/>
-  <object id="16" x="160" y="600">
-   <polygon points="0,0 -40,-40 -40,0"/>
-  </object>
-  <object id="17" x="40" y="560">
-   <polygon points="0,0 40,0 0,-40"/>
-  </object>
-  <object id="18" x="560" y="640">
-   <polygon points="0,0 40,0 40,-40 0,0"/>
-  </object>
-  <object id="21" x="92" y="240" width="32" height="136"/>
-  <object id="22" x="124" y="346" width="94" height="30"/>
-  <object id="23" x="218" y="360" width="247" height="30"/>
-  <object id="25" x="430" y="240" width="35" height="120"/>
-  <object id="29" gid="2" x="165" y="293" width="20" height="20"/>
-  <object id="30" gid="2" x="218" y="301" width="20" height="20"/>
-  <object id="31" gid="2" x="218" y="304" width="20" height="20"/>
-  <object id="32" gid="2" x="218" y="303" width="20" height="20"/>
-  <object id="33" gid="2" x="280" y="278" width="20" height="20"/>
- </objectgroup>
- <objectgroup color="#b200ff" id="5" name="markers">
-  <object id="1" name="entry" x="340" y="740">
-   <point/>
-  </object>
-  <object id="2" name="spawn" x="340" y="420">
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup color="#ff00ff" id="11" name="objects">
-  <object id="27" name="transition" x="240" y="840" width="200" height="58">
-   <properties>
-    <property name="map" value="room2"/>
-    <property name="marker" value="entry2"/>
-   </properties>
-  </object>
- </objectgroup>
 </map>

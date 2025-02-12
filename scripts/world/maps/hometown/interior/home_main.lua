@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 11,
-  nextobjectid = 68,
+  nextobjectid = 73,
   properties = {
     ["exit_delay"] = 0.2,
     ["exit_sound"] = "door_close",
@@ -91,104 +91,6 @@ return {
           gid = 266,
           visible = true,
           properties = {}
-        }
-      }
-    },
-    {
-      type = "objectgroup",
-      draworder = "topdown",
-      id = 6,
-      name = "objects",
-      class = "",
-      visible = true,
-      opacity = 1,
-      offsetx = 0,
-      offsety = 0,
-      parallaxx = 1,
-      parallaxy = 1,
-      properties = {},
-      objects = {
-        {
-          id = 10,
-          name = "",
-          type = "",
-          shape = "rectangle",
-          x = 370,
-          y = 400,
-          width = 830,
-          height = 94,
-          rotation = 0,
-          gid = 265,
-          visible = true,
-          properties = {}
-        },
-        {
-          id = 42,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 159,
-          y = 335,
-          width = 37,
-          height = 31,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.2,
-            ["map"] = "hometown/interior/home_bathroom",
-            ["marker"] = "spawn",
-            ["sound"] = "doortransition"
-          }
-        },
-        {
-          id = 55,
-          name = "npc",
-          type = "",
-          shape = "rectangle",
-          x = 852,
-          y = 274,
-          width = 84,
-          height = 19,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["actor"] = "nara",
-            ["text1"] = "* It's Chariel!\n[wait:5]* Mom's beloved chair."
-          }
-        },
-        {
-          id = 66,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 1202,
-          y = 305,
-          width = 37,
-          height = 31,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["exit_delay"] = 0.2,
-            ["map"] = "hometown/tori_yard",
-            ["marker"] = "spawn",
-            ["sound"] = "doortransition"
-          }
-        },
-        {
-          id = 67,
-          name = "transition",
-          type = "",
-          shape = "rectangle",
-          x = 276,
-          y = 275,
-          width = 66,
-          height = 31,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["map"] = "hometown/interior/home_hallway",
-            ["marker"] = "stairs"
-          }
         }
       }
     },
@@ -555,7 +457,7 @@ return {
           shape = "rectangle",
           x = 948,
           y = 258,
-          width = 102,
+          width = 94,
           height = 46,
           rotation = 0,
           visible = true,
@@ -611,6 +513,149 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "objects",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 10,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 370,
+          y = 400,
+          width = 830,
+          height = 94,
+          rotation = 0,
+          gid = 265,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 42,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 159,
+          y = 335,
+          width = 37,
+          height = 31,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["exit_delay"] = 0.2,
+            ["map"] = "hometown/interior/home_bathroom",
+            ["marker"] = "spawn",
+            ["sound"] = "doortransition"
+          }
+        },
+        {
+          id = 55,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 852,
+          y = 274,
+          width = 84,
+          height = 19,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* [voice:asriel]It's Chariel!\n[wait:5]* Mom's beloved chair."
+          }
+        },
+        {
+          id = 66,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 1202,
+          y = 305,
+          width = 37,
+          height = 31,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["exit_delay"] = 0.2,
+            ["map"] = "hometown/tori_yard",
+            ["marker"] = "spawn",
+            ["sound"] = "doortransition"
+          }
+        },
+        {
+          id = 67,
+          name = "transition",
+          type = "",
+          shape = "rectangle",
+          x = 276,
+          y = 275,
+          width = 66,
+          height = 31,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["map"] = "hometown/interior/home_hallway",
+            ["marker"] = "stairs"
+          }
+        },
+        {
+          id = 69,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 949,
+          y = 273,
+          width = 93,
+          height = 19,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* [voice:asriel]Our old TV,[wait:5] looks like it's unplugged."
+          }
+        },
+        {
+          id = 70,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 694,
+          y = 288,
+          width = 28,
+          height = 24,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* [voice:asriel]The trash can.\n[wait:15]* .[wait:5].[wait:5].",
+            ["text2"] = "* [voice:asriel]It smells like flowers[wait:5].[wait:5].[wait:5]."
+          }
+        },
+        {
+          id = 72,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 1050,
+          y = 273,
+          width = 96,
+          height = 19,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* [voice:asriel]It's just a regular chair."
+          }
         }
       }
     }

@@ -15,6 +15,7 @@ return {
     ["exit_delay"] = 0.2,
     ["exit_sound"] = "door_close",
     ["keep_music"] = false,
+    ["light"] = true,
     ["music"] = "home",
     ["name"] = "Home",
     ["sound"] = "door_open"

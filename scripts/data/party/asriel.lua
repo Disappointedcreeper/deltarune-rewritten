@@ -61,6 +61,11 @@ function character:init()
             magic = 0
         }
     end
+    self.lw_stats = {
+        health = 40,
+        attack = 80,
+        defense = 80
+    }
     -- Max stats from level-ups
     if Game.chapter == 1 then
         self.max_stats = {

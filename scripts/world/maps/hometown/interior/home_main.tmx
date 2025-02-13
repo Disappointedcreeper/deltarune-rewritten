@@ -7,6 +7,7 @@
   <property name="exit_delay" type="float" value="0.2"/>
   <property name="exit_sound" value="door_close"/>
   <property name="keep_music" type="bool" value="false"/>
+  <property name="light" type="bool" value="true"/>
   <property name="music" value="home"/>
   <property name="name" value="Home"/>
   <property name="sound" value="door_open"/>
@@ -23,7 +24,7 @@
   <object id="6" name="entry" x="1170" y="345">
    <point/>
   </object>
-  <object id="7" name="stairs" x="310" y="331">
+  <object id="7" name="stairs" x="314" y="348">
    <point/>
   </object>
   <object id="8" name="entry_bathroom" x="218" y="374">

@@ -15,6 +15,7 @@ return {
     ["exit_delay"] = 0.2,
     ["exit_sound"] = "door_close",
     ["keep_music"] = false,
+    ["light"] = true,
     ["music"] = "home",
     ["name"] = "Home",
     ["sound"] = "door_open"
@@ -126,8 +127,8 @@ return {
           name = "stairs",
           type = "",
           shape = "point",
-          x = 310,
-          y = 331,
+          x = 314,
+          y = 348,
           width = 0,
           height = 0,
           rotation = 0,

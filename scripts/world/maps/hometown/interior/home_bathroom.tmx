@@ -7,6 +7,7 @@
   <property name="exit_delay" type="float" value="0.2"/>
   <property name="exit_sound" value="door_close"/>
   <property name="keep_music" type="bool" value="false"/>
+  <property name="light" type="bool" value="true"/>
   <property name="music" value="home"/>
   <property name="name" value="Home"/>
   <property name="sound" value="door_open"/>

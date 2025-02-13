@@ -13,6 +13,7 @@ return {
   nextobjectid = 56,
   properties = {
     ["keep_music"] = false,
+    ["light"] = true,
     ["music"] = "hometown",
     ["name"] = "Tori Yard"
   },

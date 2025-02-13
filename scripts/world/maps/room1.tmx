@@ -127,7 +127,7 @@ no-good wall slammers.</property>
   <object id="38" name="interactable" x="270" y="73" width="40" height="40">
    <properties>
     <property name="cutscene" value="room1.wall"/>
-    <property name="once" type="bool" value="true"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>

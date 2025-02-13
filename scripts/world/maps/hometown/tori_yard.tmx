@@ -5,6 +5,7 @@
  </editorsettings>
  <properties>
   <property name="keep_music" type="bool" value="false"/>
+  <property name="light" type="bool" value="true"/>
   <property name="music" value="hometown"/>
   <property name="name" value="Tori Yard"/>
  </properties>

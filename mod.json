@@ -31,16 +31,8 @@
     // Equipment for your party. Not specifying equipment defaults to the following.
     "equipment": {
         "asriel": {
-            "weapon": "wood_blade",
-            "armor": ["amber_card", "amber_card"]
         },
         "dess": {
-            "weapon": "mane_ax",
-            "armor": ["amber_card", "amber_card"]
-        },
-        "vessel": {
-            "weapon": "red_scarf",
-            "armor": ["amber_card", "amber_card"]
         }
     },
 

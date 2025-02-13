@@ -11,9 +11,13 @@ function LegendCutscene:init(group, id, ...)
         ["middle_bottom"  ] = {160, 370},
         ["left_bottom"    ] = {120, 370},
         ["far_left_bottom"] = {80 , 370},
-        ["text_human"     ] = {40 , 370},
-        ["text_monster"   ] = {190, 370},
-        ["text_prince"    ] = {400, 370}
+        ["text_human"     ] = {20 , 370},
+        ["text_monster"   ] = {210, 370},
+        ["text_prince"    ] = {440, 370},
+        ["centered_1"     ] = {110, 370},
+        ["centered_2"     ] = {90 , 370},
+        ["centered_3"     ] = {130, 370},
+        ["centered_4"     ] = {146, 370}
     }
 end
 return LegendCutscene

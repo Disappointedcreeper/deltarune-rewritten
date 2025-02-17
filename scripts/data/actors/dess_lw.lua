@@ -23,20 +23,12 @@ function actor:init()
     -- Path to this actor's sprites (defaults to "")
     self.path = "party/dess/light"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
-    if Game:getConfig("dessStyle") == 1 then
-        self.default = "walk_bangs"
-    else
-        self.default = "walk"
-    end
+    self.default = "walk"
 
     -- Sound to play when this actor speaks (optional)
     self.voice = "dess"
     -- Path to this actor's portrait for dialogue (optional)
-    if Game.chapter == 1 then
-        self.portrait_path = "face/dess_bangs"
-    else
-        self.portrait_path = "face/dess"
-    end
+    self.portrait_path = "face/dess"
     -- Offset position for this actor's portrait (optional)
     self.portrait_offset = {-5, 0}
 

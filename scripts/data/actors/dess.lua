@@ -3,7 +3,7 @@ local actor, super = Class(Actor, "dess")
 function actor:init(style)
     super.init(self)
 
-    local susie_style = style or Game:getConfig("susieStyle")
+    local dess_style = style or Game:getConfig("dessStyle")
 
     -- Display name (optional)
     self.name = "Dess"
@@ -23,9 +23,9 @@ function actor:init(style)
     self.color = {1, 0, 1}
 
     -- Path to this actor's sprites (defaults to "")
-    self.path = "party/susie/dark"
+    self.path = "party/dess/dark"
     -- This actor's default sprite or animation, relative to the path (defaults to "")
-    if susie_style == 1 then
+    if dess_style == 1 then
         self.default = "walk_bangs"
     else
         self.default = "walk"
@@ -34,8 +34,8 @@ function actor:init(style)
     -- Sound to play when this actor speaks (optional)
     self.voice = "dess"
     -- Path to this actor's portrait for dialogue (optional)
-    if susie_style == 1 then
-        self.portrait_path = "face/susie_bangs"
+    if dess_style == 1 then
+        self.portrait_path = "face/dess_bangs"
     else
         self.portrait_path = "face/dess"
     end
@@ -84,7 +84,7 @@ function actor:init(style)
         ["diagonal_kick_left"] = {"diagonal_kick_left", 4/30, false}
     }
 
-    if susie_style == 1 then
+    if dess_style == 1 then
         self.animations["battle/transition"] = {"bangs_wall_right", 0, true}
     end
 

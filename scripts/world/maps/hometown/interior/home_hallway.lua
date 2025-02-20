@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 11,
-  nextobjectid = 132,
+  nextlayerid = 13,
+  nextobjectid = 136,
   properties = {
     ["exit_delay"] = 0.2,
     ["exit_sound"] = "door_close",
@@ -261,6 +261,19 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 132,
+          name = "colllision",
+          type = "",
+          shape = "rectangle",
+          x = 566,
+          y = 244,
+          width = 64,
+          height = 12,
+          rotation = 0,
+          visible = true,
+          properties = {}
         }
       }
     },
@@ -501,6 +514,22 @@ return {
           visible = true,
           properties = {
             ["text1"] = "* [voice:asriel]The cactus.\n[wait:5]* It's the most tsundere of plants."
+          }
+        },
+        {
+          id = 135,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 566,
+          y = 246,
+          width = 64,
+          height = 10,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["cutscene"] = "home_hallway.door_locked",
+            ["once"] = false
           }
         }
       }

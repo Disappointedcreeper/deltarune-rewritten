@@ -7,11 +7,11 @@ function actor:init()
     self.name = "Asriel"
 
     -- Width and height for this actor, used to determine its center
-    self.width = 19
-    self.height = 37
+    self.width = 23
+    self.height = 49
 
     -- Hitbox for this actor in the overworld (optional, uses width and height by default)
-    self.hitbox = {0, 25, 19, 14}
+    self.hitbox = {2, 37, 19, 10}
 
     -- A table that defines where the Soul should be placed on this actor if they are a player.
     -- First value is x, second value is y.

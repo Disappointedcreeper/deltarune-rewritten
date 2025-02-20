@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="132">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="136">
  <editorsettings>
   <export target="home_hallway.lua" format="lua"/>
  </editorsettings>
@@ -35,6 +35,7 @@
   <object id="99" x="352" y="256" width="102" height="6"/>
   <object id="100" x="786" y="256" width="24" height="8"/>
   <object id="103" x="168" y="232" width="62" height="24"/>
+  <object id="132" name="colllision" x="566" y="244" width="64" height="12"/>
  </objectgroup>
  <objectgroup color="#ff55ff" id="10" name="objects_deco">
   <object id="84" gid="269" x="262" y="256" width="56" height="92"/>
@@ -100,6 +101,12 @@
    <properties>
     <property name="text1">* [voice:asriel]The cactus.
 [wait:5]* It's the most tsundere of plants.</property>
+   </properties>
+  </object>
+  <object id="135" name="interactable" x="566" y="246" width="64" height="10">
+   <properties>
+    <property name="cutscene" value="home_hallway.door_locked"/>
+    <property name="once" type="bool" value="false"/>
    </properties>
   </object>
  </objectgroup>

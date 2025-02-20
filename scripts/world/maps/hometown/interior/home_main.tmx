@@ -21,13 +21,13 @@
   <object id="52" gid="266" x="844" y="316" width="94" height="104"/>
  </objectgroup>
  <objectgroup color="#7700ff" id="8" name="markers">
-  <object id="6" name="entry" x="1170" y="345">
+  <object id="6" name="entry" x="1166" y="344">
    <point/>
   </object>
   <object id="7" name="stairs" x="314" y="348">
    <point/>
   </object>
-  <object id="8" name="entry_bathroom" x="218" y="374">
+  <object id="8" name="entry_bathroom" x="234" y="374">
    <point/>
   </object>
   <object id="9" name="spawn" x="1000" y="344">
@@ -88,7 +88,7 @@
   <object id="55" name="interactable" x="852" y="274" width="84" height="19">
    <properties>
     <property name="text1">* [voice:asriel]It's Chariel!
-[wait:5]* Mom's beloved chair.</property>
+[wait:5]* The beloved living room chair.</property>
    </properties>
   </object>
   <object id="66" name="transition" x="1202" y="305" width="37" height="31">

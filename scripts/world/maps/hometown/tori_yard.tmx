@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="25" nextobjectid="56">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="21" tilewidth="40" tileheight="40" infinite="0" nextlayerid="26" nextobjectid="56">
  <editorsettings>
   <export target="tori_yard.lua" format="lua"/>
  </editorsettings>
@@ -47,7 +47,7 @@
 0,55,55,55,55,55,55,55,55,55,55,56,234,235,236,0,
 0,38,55,55,55,55,55,55,55,55,55,56,244,245,246,0,
 0,55,55,55,55,55,55,55,55,55,55,56,244,245,246,0,
-0,38,62,62,62,62,62,62,62,62,62,56,244,245,246,0,
+0,63,62,62,62,62,62,62,62,62,62,56,244,245,246,0,
 0,55,55,55,38,55,55,55,55,55,55,56,244,245,246,0,
 0,55,37,38,55,55,38,65,65,65,65,66,244,245,246,0,
 0,55,55,55,37,55,56,234,235,235,235,235,245,245,246,0,
@@ -236,6 +236,31 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <layer id="25" name="Tile Layer 11" width="16" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
  <objectgroup id="12" name="objects_deco">
   <object id="50" gid="261" x="82" y="422" width="390" height="380"/>
  </objectgroup>
@@ -271,8 +296,8 @@
  <objectgroup color="#ff00ff" id="11" name="objects">
   <object id="27" name="transition" x="240" y="840" width="200" height="58">
    <properties>
-    <property name="map" value="room2"/>
-    <property name="marker" value="entry2"/>
+    <property name="map" value="hometown/town_north"/>
+    <property name="marker" value="spawn"/>
    </properties>
   </object>
   <object id="54" name="transition" x="312" y="360" width="56" height="28">

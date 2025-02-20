@@ -4,13 +4,20 @@ return {
 
     ---@param cutscene WorldCutscene
     darkDoor = function(cutscene, event)
-        cutscene:detachCamera()
-        cutscene:detachFollowers()
 
         local dess = cutscene:getCharacter("dess")
         local asriel = Game.world.player
 
-        cutscene:wait(cutscene:walkTo(asriel, 504, 281, 0.5, "up", true))
+        cutscene:detachFollowers()
+
+        cutscene:wait(cutscene:walkTo(asriel, 504, 284, 0.2, "up", true))
+        local choice = cutscene:textChoicer("[voice:asriel]* Open the door?\n", {"Yes", "No"})
+        if choice == 2 then -- because Option 1 was the first item of the table
+            cutscene:text("[voice:asriel]* It can wait.")
+            cutscene:attachFollowers()
+            return
+        end
+        cutscene:detachCamera()
         if not Game.world.stage:getObjects(Registry.getEvent("darkdoor"))[1].isOpen then
             Game.world.stage:getObjects(Registry.getEvent("darkdoor"))[1]:open() 
         end
@@ -20,12 +27,30 @@ return {
         cutscene:wait(0.5)
         cutscene:setSpeaker(dess)
         cutscene:text("* What the heck.[wait:2].[wait:2]?", "nervous")
-        cutscene:wait(cutscene:walkTo(dess, 550, 300, 0.5, "left", true))
+        if(dess.x < 550) then
+            cutscene:wait(cutscene:walkTo(dess, 550, 300, 0.5, "right", true))
+        else
+            cutscene:wait(cutscene:walkTo(dess, 550, 300, 0.5, "left", true))
+        end
+        
         dess:setSprite("walk/up_1")
         cutscene:text("* Asriel?\n[wait:5]* Why is your closet so.[wait:2].[wait:2]. dark?", "nervous")
         cutscene:setSpeaker(asriel)
-        cutscene:text("* Asriel?\n[wait:5]* I have no clue..?")
+        cutscene:text("* Blah blah blah.\n[wait:5]* Blah blah.")
+        cutscene:setSpeaker(dess)
+        cutscene:text("* Blah blah blah blah blah.", "nervous")
+
+    end,
 
 
+    door_locked = function(cutscene, event)
+        Assets.playSound("dooropen")
+        cutscene:wait(0.1)
+        Assets.playSound("doorclose")
+        cutscene:wait(0.5)
+        local asriel = Game.world.player
+        cutscene:setSpeaker(asriel)
+        cutscene:text("* My door's locked?")
+        cutscene:text("* I guess I'll have to go through the closet.")
     end
 }

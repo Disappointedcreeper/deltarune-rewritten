@@ -114,8 +114,8 @@ return {
           name = "entry",
           type = "",
           shape = "point",
-          x = 1170,
-          y = 345,
+          x = 1166,
+          y = 344,
           width = 0,
           height = 0,
           rotation = 0,
@@ -140,7 +140,7 @@ return {
           name = "entry_bathroom",
           type = "",
           shape = "point",
-          x = 218,
+          x = 234,
           y = 374,
           width = 0,
           height = 0,
@@ -575,7 +575,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* [voice:asriel]It's Chariel!\n[wait:5]* Mom's beloved chair."
+            ["text1"] = "* [voice:asriel]It's Chariel!\n[wait:5]* The beloved living room chair."
           }
         },
         {

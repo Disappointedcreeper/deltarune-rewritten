@@ -1,7 +1,7 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.11.2",
   class = "",
   orientation = "orthogonal",
   renderorder = "right-down",
@@ -255,19 +255,6 @@ return {
           }
         },
         {
-          id = 21,
-          name = "darkdoor",
-          type = "",
-          shape = "rectangle",
-          x = 576,
-          y = 120,
-          width = 88,
-          height = 112,
-          rotation = 0,
-          visible = true,
-          properties = {}
-        },
-        {
           id = 22,
           name = "transition",
           type = "",
@@ -285,21 +272,6 @@ return {
             ["map"] = "hometown/school/unused_class",
             ["marker"] = "spawn",
             ["sound"] = "dooropen"
-          }
-        },
-        {
-          id = 24,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 560,
-          y = 200,
-          width = 120,
-          height = 40,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "enterdark"
           }
         }
       }

@@ -12,7 +12,7 @@ function BeachWater:init(data)
     self.shader = love.graphics.newShader([[
         extern float time; // seconds
 extern vec2 texture_dim;
-extern vec2 do_dim = vec2(1, 0);
+const vec2 do_dim = vec2(1, 0);
 extern int thickness = 1;
 
 vec4 effect(vec4 color, Image tex, vec2 texture_coords, vec2 screen_coords) {

@@ -22,14 +22,8 @@ return {
   },
   tilesets = {
     {
-      name = "hometown",
-      firstgid = 1,
-      filename = "../../../tilesets/hometown.tsx",
-      exportfilename = "../../../tilesets/hometown.lua"
-    },
-    {
       name = "interior",
-      firstgid = 261,
+      firstgid = 1,
       filename = "../../../tilesets/interior.tsx",
       exportfilename = "../../../tilesets/interior.lua"
     }
@@ -59,7 +53,7 @@ return {
           width = 640,
           height = 480,
           rotation = 0,
-          gid = 262,
+          gid = 2,
           visible = true,
           properties = {}
         }

@@ -22,14 +22,8 @@ return {
   },
   tilesets = {
     {
-      name = "hometown",
-      firstgid = 1,
-      filename = "../../../tilesets/hometown.tsx",
-      exportfilename = "../../../tilesets/hometown.lua"
-    },
-    {
       name = "interior",
-      firstgid = 261,
+      firstgid = 1,
       filename = "../../../tilesets/interior.tsx",
       exportfilename = "../../../tilesets/interior.lua"
     }
@@ -59,7 +53,7 @@ return {
           width = 1414,
           height = 480,
           rotation = 0,
-          gid = 268,
+          gid = 8,
           visible = true,
           properties = {}
         }
@@ -89,7 +83,7 @@ return {
           width = 94,
           height = 104,
           rotation = 0,
-          gid = 266,
+          gid = 6,
           visible = true,
           properties = {}
         }
@@ -541,7 +535,7 @@ return {
           width = 830,
           height = 94,
           rotation = 0,
-          gid = 265,
+          gid = 5,
           visible = true,
           properties = {}
         },
@@ -591,8 +585,8 @@ return {
           visible = true,
           properties = {
             ["exit_delay"] = 0.2,
-            ["map"] = "hometown/tori_yard",
-            ["marker"] = "spawn",
+            ["map"] = "hometown/krisyard",
+            ["marker"] = "entry_house",
             ["sound"] = "doortransition"
           }
         },

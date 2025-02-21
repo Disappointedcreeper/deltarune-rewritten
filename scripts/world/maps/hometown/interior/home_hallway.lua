@@ -22,14 +22,8 @@ return {
   },
   tilesets = {
     {
-      name = "hometown",
-      firstgid = 1,
-      filename = "../../../tilesets/hometown.tsx",
-      exportfilename = "../../../tilesets/hometown.lua"
-    },
-    {
       name = "interior",
-      firstgid = 261,
+      firstgid = 1,
       filename = "../../../tilesets/interior.tsx",
       exportfilename = "../../../tilesets/interior.lua"
     }
@@ -59,7 +53,7 @@ return {
           width = 1076,
           height = 480,
           rotation = 0,
-          gid = 267,
+          gid = 7,
           visible = true,
           properties = {}
         }
@@ -228,7 +222,7 @@ return {
           name = "",
           type = "",
           shape = "rectangle",
-          x = 352,
+          x = 438,
           y = 256,
           width = 102,
           height = 6,
@@ -301,7 +295,7 @@ return {
           width = 56,
           height = 92,
           rotation = 0,
-          gid = 269,
+          gid = 9,
           visible = true,
           properties = {}
         },
@@ -325,7 +319,7 @@ return {
           name = "darkdoor",
           type = "",
           shape = "point",
-          x = 504,
+          x = 380,
           y = 254,
           width = 0,
           height = 0,
@@ -447,9 +441,9 @@ return {
           name = "open_dark_door",
           type = "",
           shape = "rectangle",
-          x = 486,
-          y = 150,
-          width = 36,
+          x = 357,
+          y = 152,
+          width = 45,
           height = 102,
           rotation = 0,
           visible = true,
@@ -460,9 +454,9 @@ return {
           name = "interactable",
           type = "",
           shape = "rectangle",
-          x = 482,
-          y = 221,
-          width = 44,
+          x = 352,
+          y = 227,
+          width = 56,
           height = 27,
           rotation = 0,
           visible = true,

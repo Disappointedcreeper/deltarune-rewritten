@@ -12,16 +12,15 @@
   <property name="name" value="Home"/>
   <property name="sound" value="door_open"/>
  </properties>
- <tileset firstgid="1" source="../../../tilesets/hometown.tsx"/>
- <tileset firstgid="261" source="../../../tilesets/interior.tsx"/>
+ <tileset firstgid="1" source="../../../tilesets/interior.tsx"/>
  <objectgroup id="7" name="objects_bg">
-  <object id="109" gid="263" x="0" y="480" width="640" height="480"/>
+  <object id="109" gid="3" x="0" y="480" width="640" height="480"/>
  </objectgroup>
  <objectgroup id="10" name="objects_deco">
-  <object id="118" gid="272" x="466" y="266" width="92" height="76"/>
+  <object id="118" gid="12" x="466" y="266" width="92" height="76"/>
  </objectgroup>
  <objectgroup color="#e83dff" id="6" name="objects">
-  <object id="136" gid="273" x="444" y="384" width="74" height="60"/>
+  <object id="136" gid="13" x="444" y="384" width="74" height="60"/>
   <object id="142" name="transition" x="290" y="480" width="80" height="31">
    <properties>
     <property name="exit_delay" type="float" value="0.2"/>

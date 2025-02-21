@@ -12,10 +12,9 @@
   <property name="name" value="Home"/>
   <property name="sound" value="door_open"/>
  </properties>
- <tileset firstgid="1" source="../../../tilesets/hometown.tsx"/>
- <tileset firstgid="261" source="../../../tilesets/interior.tsx"/>
+ <tileset firstgid="1" source="../../../tilesets/interior.tsx"/>
  <objectgroup id="7" name="objects_bg">
-  <object id="83" gid="267" x="0" y="480" width="1076" height="480"/>
+  <object id="83" gid="7" x="0" y="480" width="1076" height="480"/>
  </objectgroup>
  <objectgroup color="#006fff" id="9" name="collision">
   <object id="85" x="630" y="178" width="208" height="78"/>
@@ -32,20 +31,20 @@
    <polygon points="0,0 -2,2 6,2 6,-4 4,-2"/>
   </object>
   <object id="98" x="956" y="256" width="17" height="78"/>
-  <object id="99" x="352" y="256" width="102" height="6"/>
+  <object id="99" x="438" y="256" width="102" height="6"/>
   <object id="100" x="786" y="256" width="24" height="8"/>
   <object id="103" x="168" y="232" width="62" height="24"/>
   <object id="132" name="colllision" x="566" y="244" width="64" height="12"/>
  </objectgroup>
  <objectgroup color="#ff55ff" id="10" name="objects_deco">
-  <object id="84" gid="269" x="262" y="256" width="56" height="92"/>
+  <object id="84" gid="9" x="262" y="256" width="56" height="92"/>
   <object id="122" name="room_dark" x="0" y="0">
    <properties>
     <property name="path" value="interior/hometown/Home/hallway_dark"/>
    </properties>
    <point/>
   </object>
-  <object id="125" name="darkdoor" x="504" y="254">
+  <object id="125" name="darkdoor" x="380" y="254">
    <properties>
     <property name="path" value="world/events/darkdoor"/>
    </properties>
@@ -80,8 +79,8 @@
     <property name="sound" value="doortransition"/>
    </properties>
   </object>
-  <object id="126" name="open_dark_door" x="486" y="150" width="36" height="102"/>
-  <object id="127" name="interactable" x="482" y="221" width="44" height="27">
+  <object id="126" name="open_dark_door" x="357" y="152" width="45" height="102"/>
+  <object id="127" name="interactable" x="352" y="227" width="56" height="27">
    <properties>
     <property name="cutscene" value="home_hallway.darkDoor"/>
     <property name="once" type="bool" value="false"/>

@@ -10,7 +10,7 @@ return {
 
         cutscene:detachFollowers()
 
-        cutscene:wait(cutscene:walkTo(asriel, 504, 284, 0.2, "up", true))
+        cutscene:wait(cutscene:walkTo(asriel, 380, 284, 0.2, "up", true))
         local choice = cutscene:textChoicer("[voice:asriel]* Open the door?\n", {"Yes", "No"})
         if choice == 2 then -- because Option 1 was the first item of the table
             cutscene:text("[voice:asriel]* It can wait.")
@@ -26,15 +26,15 @@ return {
         Game.world:transitionMusic("AUDIO_DOOR")
         cutscene:wait(0.5)
         cutscene:setSpeaker(dess)
-        cutscene:text("* What the heck.[wait:2].[wait:2]?", "nervous")
-        if(dess.x < 550) then
-            cutscene:wait(cutscene:walkTo(dess, 550, 300, 0.5, "right", true))
+        cutscene:text("* Blah blah blah blah blah?", "nervous")
+        if(dess.x < 420) then
+            cutscene:wait(cutscene:walkTo(dess, 420, 300, 0.5, "right", true))
         else
-            cutscene:wait(cutscene:walkTo(dess, 550, 300, 0.5, "left", true))
+            cutscene:wait(cutscene:walkTo(dess, 420, 300, 0.5, "left", true))
         end
         
         dess:setSprite("walk/up_1")
-        cutscene:text("* Asriel?\n[wait:5]* Why is your closet so.[wait:2].[wait:2]. dark?", "nervous")
+        cutscene:text("* Blah blah?\n[wait:5]* Blah blah blah blah?", "nervous")
         cutscene:setSpeaker(asriel)
         cutscene:text("* Blah blah blah.\n[wait:5]* Blah blah.")
         cutscene:setSpeaker(dess)

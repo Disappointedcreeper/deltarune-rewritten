@@ -3,7 +3,7 @@ local DarkDoor, super = Class(Event, "darkdoor")
 
 function DarkDoor:init(data)
         -- Place the event at the correct position, and make the size 20x20
-        super.init(self, data.x, data.y, 22, 56, data)
+        super.init(self, data.x, data.y, 28, 54, data)
 
         self.path = data.properties.path
 

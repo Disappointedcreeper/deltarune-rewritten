@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.11" tiledversion="1.11.2" name="interior" tilewidth="707" tileheight="240" tilecount="15" columns="0">
+<tileset version="1.11" tiledversion="1.11.2" name="interior" tilewidth="707" tileheight="240" tilecount="16" columns="0">
  <editorsettings>
   <export target="interior.lua" format="lua"/>
  </editorsettings>
@@ -48,5 +48,8 @@
  </tile>
  <tile id="14">
   <image source="../../../assets/sprites/interior/hometown/Home/window_1.png" width="49" height="44"/>
+ </tile>
+ <tile id="15">
+  <image source="../../../assets/sprites/interior/hometown/Home/closet_inside.png" width="125" height="73"/>
  </tile>
 </tileset>

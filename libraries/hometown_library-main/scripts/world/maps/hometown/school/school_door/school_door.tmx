@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="31" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="6" nextobjectid="25">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="31" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="33">
  <editorsettings>
   <export target="data.lua" format="lua"/>
  </editorsettings>
@@ -9,6 +9,7 @@
   <property name="music" value="school"/>
  </properties>
  <tileset firstgid="1" source="../../../../tilesets/school.tsx"/>
+ <tileset firstgid="109" source="../../../../tilesets/hometownobjects.tsx"/>
  <layer id="1" name="tile" width="31" height="12">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -51,6 +52,9 @@
   <object id="7" x="680" y="360" width="40" height="120"/>
   <object id="8" x="520" y="360" width="40" height="120"/>
  </objectgroup>
+ <objectgroup id="10" name="objects_deco">
+  <object id="32" gid="181" x="576" y="238" width="88" height="112"/>
+ </objectgroup>
  <objectgroup color="#ff00ff" id="4" name="objects">
   <object id="18" name="transition" x="560" y="480" width="120" height="40">
    <properties>
@@ -72,6 +76,13 @@
     <property name="map" value="hometown/school/unused_class"/>
     <property name="marker" value="spawn"/>
     <property name="sound" value="dooropen"/>
+   </properties>
+  </object>
+  <object id="28" name="interactable" x="576" y="198" width="88" height="40">
+   <properties>
+    <property name="text1">* [voice:asriel]The door is locked.
+[wait:5]* I get the feeling it won't open anytime soon.</property>
+    <property name="text2" value="* [voice:asriel]Hope nobody needs chalk."/>
    </properties>
   </object>
  </objectgroup>

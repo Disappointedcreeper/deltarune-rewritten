@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 25,
+  nextlayerid = 11,
+  nextobjectid = 33,
   properties = {
     ["border"] = "leaves",
     ["light"] = true,
@@ -21,6 +21,12 @@ return {
       name = "school",
       firstgid = 1,
       filename = "../../../../tilesets/school.tsx"
+    },
+    {
+      name = "hometownobjects",
+      firstgid = 109,
+      filename = "../../../../tilesets/hometownobjects.tsx",
+      exportfilename = "../../../../tilesets/hometownobjects.lua"
     }
   },
   layers = {
@@ -211,6 +217,36 @@ return {
     {
       type = "objectgroup",
       draworder = "topdown",
+      id = 10,
+      name = "objects_deco",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 32,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 576,
+          y = 238,
+          width = 88,
+          height = 112,
+          rotation = 0,
+          gid = 181,
+          visible = true,
+          properties = {}
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
       id = 4,
       name = "objects",
       class = "",
@@ -272,6 +308,22 @@ return {
             ["map"] = "hometown/school/unused_class",
             ["marker"] = "spawn",
             ["sound"] = "dooropen"
+          }
+        },
+        {
+          id = 28,
+          name = "interactable",
+          type = "",
+          shape = "rectangle",
+          x = 576,
+          y = 198,
+          width = 88,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["text1"] = "* [voice:asriel]The door is locked.\n[wait:5]* I get the feeling it won't open anytime soon.",
+            ["text2"] = "* [voice:asriel]Hope nobody needs chalk."
           }
         }
       }

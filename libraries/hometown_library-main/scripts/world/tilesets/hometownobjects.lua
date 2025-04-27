@@ -1,7 +1,7 @@
 return {
-  version = "1.10",
+  version = "1.11",
   luaversion = "5.1",
-  tiledversion = "1.11.0",
+  tiledversion = "1.11.2",
   name = "hometownobjects",
   class = "",
   tilewidth = 830,
@@ -23,7 +23,7 @@ return {
   },
   properties = {},
   wangsets = {},
-  tilecount = 66,
+  tilecount = 67,
   tiles = {
     {
       id = 1,
@@ -430,6 +430,12 @@ return {
       image = "../../../assets/sprites/tilesets/objects/sans_open_on.png",
       width = 54,
       height = 28
+    },
+    {
+      id = 72,
+      image = "../../../assets/sprites/darkdoor_closed.png",
+      width = 44,
+      height = 56
     }
   }
 }

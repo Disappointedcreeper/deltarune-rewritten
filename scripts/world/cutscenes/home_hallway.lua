@@ -11,12 +11,6 @@ return {
         cutscene:detachFollowers()
 
         cutscene:wait(cutscene:walkTo(asriel, 380, 284, 0.2, "up", true))
-        local choice = cutscene:textChoicer("[voice:asriel]* Open the door?\n", {"Yes", "No"})
-        if choice == 2 then -- because Option 1 was the first item of the table
-            cutscene:text("[voice:asriel]* It can wait.")
-            cutscene:attachFollowers()
-            return
-        end
         cutscene:detachCamera()
         if not Game.world.stage:getObjects(Registry.getEvent("darkdoor"))[1].isOpen then
             Game.world.stage:getObjects(Registry.getEvent("darkdoor"))[1]:open() 
@@ -26,20 +20,34 @@ return {
         Game.world:transitionMusic("AUDIO_DOOR")
         cutscene:wait(0.5)
         cutscene:setSpeaker(dess)
-        cutscene:text("* Blah blah blah blah blah?", "nervous")
+        cutscene:text("* ...", "nervous")
+        cutscene:text("* Hey Azzy, did you do something to your closet?", "nervous")
+        cutscene:text("* I don't remember it being THIS dark.", "nervous")
         if(dess.x < 420) then
             cutscene:wait(cutscene:walkTo(dess, 420, 300, 0.5, "right", true))
         else
             cutscene:wait(cutscene:walkTo(dess, 420, 300, 0.5, "left", true))
         end
         
-        dess:setSprite("walk/up_1")
-        cutscene:text("* Blah blah?\n[wait:5]* Blah blah blah blah?", "nervous")
+        cutscene:wait(cutscene:walkTo(dess, 420, 300, 0, "up", true))
         cutscene:setSpeaker(asriel)
-        cutscene:text("* Blah blah blah.\n[wait:5]* Blah blah.")
+        cutscene:text("* Maybe we can try to enter and turn on the light?")
         cutscene:setSpeaker(dess)
-        cutscene:text("* Blah blah blah blah blah.", "nervous")
-
+        cutscene:text("* Well... You go first then.", "nervous")
+        cutscene:setSpeaker(asriel)
+        cutscene:text("* Really?\n[wait:5]* Does a bit of darkness scare you?")
+        cutscene:setSpeaker(dess)
+        cutscene:text("* ...", "nervous")
+        cutscene:setSpeaker(asriel)
+        cutscene:text("* Okay okay, I'll go first.")
+        cutscene:wait(cutscene:walkTo(asriel, 380, 250, 1, "up", true))
+        cutscene:wait(cutscene:walkTo(dess, 380, 300, 1, "left", true))
+        cutscene:wait(cutscene:walkTo(dess, 380, 300, 0, "up", true))
+        cutscene:wait(0.5)
+        cutscene:walkTo(dess, 380, 250, 1, "up", true)
+        cutscene:attachFollowers()
+        cutscene:wait(0.2)
+        cutscene:wait(cutscene:mapTransition("hometown/interior/home_dark"))
     end,
 
 
@@ -50,7 +58,15 @@ return {
         cutscene:wait(0.5)
         local asriel = Game.world.player
         cutscene:setSpeaker(asriel)
-        cutscene:text("* My door's locked?")
-        cutscene:text("* I guess I'll have to go through the closet.")
+        cutscene:text("* ...")
+        cutscene:text("* What?\n[wait:5]* Why would the door be locked?")
+        cutscene:text("* Did mom or Kris leave the lock on before leaving?")
+        cutscene:wait(0.25)
+        Assets.playSound("dooropen")
+        cutscene:wait(0.1)
+        Assets.playSound("doorclose")
+        cutscene:wait(0.5)
+        cutscene:text("* ...\n[wait:5]* It doesn't budge.")
+        cutscene:text("* No big problem, we can go through the closet, it's connected to the bedroom.")
     end
 }

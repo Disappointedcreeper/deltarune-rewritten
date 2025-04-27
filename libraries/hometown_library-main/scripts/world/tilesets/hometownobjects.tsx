@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.11.0" name="hometownobjects" tilewidth="830" tileheight="656" tilecount="66" columns="0">
+<tileset version="1.11" tiledversion="1.11.2" name="hometownobjects" tilewidth="830" tileheight="656" tilecount="67" columns="0">
  <editorsettings>
   <export target="hometownobjects.lua" format="lua"/>
  </editorsettings>
@@ -205,5 +205,8 @@
  </tile>
  <tile id="69">
   <image source="../../../assets/sprites/tilesets/objects/sans_open_on.png" width="54" height="28"/>
+ </tile>
+ <tile id="72">
+  <image source="../../../assets/sprites/darkdoor_closed.png" width="44" height="56"/>
  </tile>
 </tileset>

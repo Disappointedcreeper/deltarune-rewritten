@@ -13,7 +13,7 @@ function BeachWater:init(data)
         extern float time; // seconds
 extern vec2 texture_dim;
 const vec2 do_dim = vec2(1, 0);
-extern int thickness = 1;
+const float thickness = 1.0;
 
 vec4 effect(vec4 color, Image tex, vec2 texture_coords, vec2 screen_coords) {
     vec2 chunk = vec2(floor(texture_coords.x * texture_dim.x / thickness) * thickness, floor(texture_coords.y * texture_dim.y / thickness) * thickness);

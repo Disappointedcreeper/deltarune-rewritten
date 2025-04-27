@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 13,
-  nextobjectid = 136,
+  nextobjectid = 137,
   properties = {
     ["exit_delay"] = 0.2,
     ["exit_sound"] = "door_close",
@@ -492,7 +492,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["text1"] = "* There's books about snails."
+            ["text1"] = "* [voice:asriel]There's books about snails."
           }
         },
         {

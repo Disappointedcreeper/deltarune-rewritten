@@ -450,22 +450,6 @@ return {
           properties = {}
         },
         {
-          id = 127,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 352,
-          y = 227,
-          width = 56,
-          height = 27,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "home_hallway.darkDoor",
-            ["once"] = false
-          }
-        },
-        {
           id = 129,
           name = "interactable",
           type = "",

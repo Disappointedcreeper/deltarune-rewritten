@@ -10,7 +10,7 @@ return {
   tilewidth = 40,
   tileheight = 40,
   nextlayerid = 7,
-  nextobjectid = 67,
+  nextobjectid = 69,
   properties = {
     ["keep_music"] = true,
     ["light"] = true,
@@ -473,8 +473,8 @@ return {
           name = "spawn",
           type = "",
           shape = "point",
-          x = 53,
-          y = 251,
+          x = 60,
+          y = 250,
           width = 0,
           height = 0,
           rotation = 0,
@@ -509,22 +509,6 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
-        },
-        {
-          id = 55,
-          name = "interactable",
-          type = "",
-          shape = "rectangle",
-          x = 65,
-          y = 193,
-          width = 56,
-          height = 27,
-          rotation = 0,
-          visible = true,
-          properties = {
-            ["cutscene"] = "home_dark.fall",
-            ["once"] = false
-          }
         }
       }
     }

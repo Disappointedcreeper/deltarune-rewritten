@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="67">
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="10" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="69">
  <editorsettings>
   <export target="home_dark.lua" format="lua"/>
  </editorsettings>
@@ -149,19 +149,13 @@
   </object>
  </objectgroup>
  <objectgroup color="#aa00ff" id="5" name="markers">
-  <object id="6" name="spawn" x="53" y="251">
+  <object id="6" name="spawn" x="60" y="250">
    <point/>
   </object>
  </objectgroup>
  <objectgroup color="#ff00ff" id="2" name="objects">
   <object id="53" name="fall" type="point" x="9" y="240">
    <point/>
-  </object>
-  <object id="55" name="interactable" x="65" y="193" width="56" height="27">
-   <properties>
-    <property name="cutscene" value="home_dark.fall"/>
-    <property name="once" type="bool" value="false"/>
-   </properties>
   </object>
  </objectgroup>
 </map>
